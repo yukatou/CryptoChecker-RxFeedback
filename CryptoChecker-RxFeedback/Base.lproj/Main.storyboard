@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JAk-sQ-1EF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--coins-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CryptoChecker_RxFeedback" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vs9-zS-z5J">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="44" id="f6c-Z9-Yfr">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f6c-Z9-Yfr" id="CCZ-AA-XQB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coin" translatesAutoresizingMaskIntoConstraints="NO" id="Ags-Zh-m8i">
+                                                    <rect key="frame" x="16" y="5" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="U3r-dn-waK"/>
+                                                        <constraint firstAttribute="width" constant="32" id="zcs-Xf-xbh"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coin Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCs-lq-lOO">
+                                                    <rect key="frame" x="60" y="11.5" width="85" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KG-uO-6Cb">
+                                                    <rect key="frame" x="321" y="11" width="39" height="21"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6KG-uO-6Cb" firstAttribute="centerY" secondItem="CCZ-AA-XQB" secondAttribute="centerY" id="9G7-2F-wVY"/>
+                                                <constraint firstItem="wCs-lq-lOO" firstAttribute="leading" secondItem="Ags-Zh-m8i" secondAttribute="trailing" constant="12" id="Jhr-KP-svA"/>
+                                                <constraint firstItem="6KG-uO-6Cb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CCZ-AA-XQB" secondAttribute="leadingMargin" id="Jjy-jC-Lhz"/>
+                                                <constraint firstItem="wCs-lq-lOO" firstAttribute="centerY" secondItem="CCZ-AA-XQB" secondAttribute="centerY" id="Lt9-kg-SNO"/>
+                                                <constraint firstItem="Ags-Zh-m8i" firstAttribute="centerY" secondItem="CCZ-AA-XQB" secondAttribute="centerY" id="fKT-O2-6mo"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wCs-lq-lOO" secondAttribute="trailing" constant="20" symbolic="YES" id="hKz-jA-8zk"/>
+                                                <constraint firstItem="6KG-uO-6Cb" firstAttribute="trailing" secondItem="CCZ-AA-XQB" secondAttribute="trailingMargin" id="p52-At-lD7"/>
+                                                <constraint firstItem="Ags-Zh-m8i" firstAttribute="leading" secondItem="CCZ-AA-XQB" secondAttribute="leading" constant="16" id="zWl-xs-12c"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vs9-zS-z5J" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ccH-tx-mgx"/>
+                            <constraint firstItem="vs9-zS-z5J" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hSo-8L-nVf"/>
+                            <constraint firstItem="vs9-zS-z5J" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nBP-C1-edM"/>
+                            <constraint firstItem="vs9-zS-z5J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sSL-YA-h8Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="coins" id="vPp-IV-Dmj"/>
+                    <connections>
+                        <outlet property="tableView" destination="vs9-zS-z5J" id="dWZ-FN-Rbz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7pq-rA-zq3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JAk-sQ-1EF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pdd-gu-xdb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dxE-6w-0fI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jbt-iT-vmR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-326" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Coin" width="32" height="32"/>
+    </resources>
+</document>

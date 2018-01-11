@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A4DA5172005BCD8004ADD9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4DA5162005BCD8004ADD9A /* AppDelegate.swift */; };
+		9A4DA5192005BCD8004ADD9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4DA5182005BCD8004ADD9A /* ViewController.swift */; };
+		9A4DA51C2005BCD8004ADD9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4DA51A2005BCD8004ADD9A /* Main.storyboard */; };
+		9A4DA51E2005BCD8004ADD9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4DA51D2005BCD8004ADD9A /* Assets.xcassets */; };
+		9A4DA5212005BCD8004ADD9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4DA51F2005BCD8004ADD9A /* LaunchScreen.storyboard */; };
+		9A4DA52C2005BCD8004ADD9A /* CryptoChecker_RxFeedbackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4DA52B2005BCD8004ADD9A /* CryptoChecker_RxFeedbackTests.swift */; };
+		9A4DA5372005BCD8004ADD9A /* CryptoChecker_RxFeedbackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4DA5362005BCD8004ADD9A /* CryptoChecker_RxFeedbackUITests.swift */; };
+		9A4DA5492005BE41004ADD9A /* CoinMarketCapAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4DA5472005BE40004ADD9A /* CoinMarketCapAPIClient.swift */; };
+		9A4DA54A2005BE41004ADD9A /* CoinMarketCapAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4DA5482005BE41004ADD9A /* CoinMarketCapAPI.swift */; };
+		9A4DA54D2005BE63004ADD9A /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4DA54C2005BE63004ADD9A /* Coin.swift */; };
+		9ACCFEAA2006762700469321 /* Double+Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCFEA92006762700469321 /* Double+Decimal.swift */; };
+		9ACCFEAC20067B5E00469321 /* UIScrollView+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCFEAB20067B5D00469321 /* UIScrollView+Reactive.swift */; };
+		9ACCFEAE2007B5A000469321 /* ControlEvent+Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCFEAD2007B5A000469321 /* ControlEvent+Signal.swift */; };
+		BF2B8305CF8DE264067C269E /* Pods_CryptoChecker_RxFeedbackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AAC9D6A98ECCEB7DDEAB790 /* Pods_CryptoChecker_RxFeedbackTests.framework */; };
+		C244A709E3262E8960EC63D5 /* Pods_CryptoChecker_RxFeedbackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537D486F3E3D8510101996AE /* Pods_CryptoChecker_RxFeedbackUITests.framework */; };
+		F6EB384D5CA5B091CC2907C6 /* Pods_CryptoChecker_RxFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42742E99A28665669F41C938 /* Pods_CryptoChecker_RxFeedback.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A4DA5282005BCD8004ADD9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A4DA50B2005BCD8004ADD9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A4DA5122005BCD8004ADD9A;
+			remoteInfo = "CryptoChecker-RxFeedback";
+		};
+		9A4DA5332005BCD8004ADD9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A4DA50B2005BCD8004ADD9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A4DA5122005BCD8004ADD9A;
+			remoteInfo = "CryptoChecker-RxFeedback";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0129D841E9DBE031A2135001 /* Pods-CryptoChecker-RxFeedbackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoChecker-RxFeedbackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoChecker-RxFeedbackUITests/Pods-CryptoChecker-RxFeedbackUITests.release.xcconfig"; sourceTree = "<group>"; };
+		348A1C01151C2C749237C06E /* Pods-CryptoChecker-RxFeedback.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoChecker-RxFeedback.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoChecker-RxFeedback/Pods-CryptoChecker-RxFeedback.release.xcconfig"; sourceTree = "<group>"; };
+		3C16D2A3D153D6610A529349 /* Pods-CryptoChecker-RxFeedbackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoChecker-RxFeedbackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoChecker-RxFeedbackTests/Pods-CryptoChecker-RxFeedbackTests.debug.xcconfig"; sourceTree = "<group>"; };
+		42742E99A28665669F41C938 /* Pods_CryptoChecker_RxFeedback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoChecker_RxFeedback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D4779FD457233A6F4329188 /* Pods-CryptoChecker-RxFeedback.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoChecker-RxFeedback.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoChecker-RxFeedback/Pods-CryptoChecker-RxFeedback.debug.xcconfig"; sourceTree = "<group>"; };
+		537D486F3E3D8510101996AE /* Pods_CryptoChecker_RxFeedbackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoChecker_RxFeedbackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AAC9D6A98ECCEB7DDEAB790 /* Pods_CryptoChecker_RxFeedbackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoChecker_RxFeedbackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4DA5132005BCD8004ADD9A /* CryptoChecker-RxFeedback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CryptoChecker-RxFeedback.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4DA5162005BCD8004ADD9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A4DA5182005BCD8004ADD9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A4DA51B2005BCD8004ADD9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A4DA51D2005BCD8004ADD9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A4DA5202005BCD8004ADD9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A4DA5222005BCD8004ADD9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A4DA5272005BCD8004ADD9A /* CryptoChecker-RxFeedbackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoChecker-RxFeedbackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4DA52B2005BCD8004ADD9A /* CryptoChecker_RxFeedbackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoChecker_RxFeedbackTests.swift; sourceTree = "<group>"; };
+		9A4DA52D2005BCD8004ADD9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A4DA5322005BCD8004ADD9A /* CryptoChecker-RxFeedbackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoChecker-RxFeedbackUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4DA5362005BCD8004ADD9A /* CryptoChecker_RxFeedbackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoChecker_RxFeedbackUITests.swift; sourceTree = "<group>"; };
+		9A4DA5382005BCD8004ADD9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A4DA5472005BE40004ADD9A /* CoinMarketCapAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinMarketCapAPIClient.swift; sourceTree = "<group>"; };
+		9A4DA5482005BE41004ADD9A /* CoinMarketCapAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinMarketCapAPI.swift; sourceTree = "<group>"; };
+		9A4DA54C2005BE63004ADD9A /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		9ACCFEA92006762700469321 /* Double+Decimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Decimal.swift"; sourceTree = "<group>"; };
+		9ACCFEAB20067B5D00469321 /* UIScrollView+Reactive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Reactive.swift"; sourceTree = "<group>"; };
+		9ACCFEAD2007B5A000469321 /* ControlEvent+Signal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControlEvent+Signal.swift"; sourceTree = "<group>"; };
+		A44942B62F524AD962AE7467 /* Pods-CryptoChecker-RxFeedbackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoChecker-RxFeedbackUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoChecker-RxFeedbackUITests/Pods-CryptoChecker-RxFeedbackUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D01D90E2EBEEC6D404FBB63F /* Pods-CryptoChecker-RxFeedbackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoChecker-RxFeedbackTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoChecker-RxFeedbackTests/Pods-CryptoChecker-RxFeedbackTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A4DA5102005BCD8004ADD9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EB384D5CA5B091CC2907C6 /* Pods_CryptoChecker_RxFeedback.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4DA5242005BCD8004ADD9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2B8305CF8DE264067C269E /* Pods_CryptoChecker_RxFeedbackTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4DA52F2005BCD8004ADD9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C244A709E3262E8960EC63D5 /* Pods_CryptoChecker_RxFeedbackUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99EBA576E585D986C8D5B972 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42742E99A28665669F41C938 /* Pods_CryptoChecker_RxFeedback.framework */,
+				5AAC9D6A98ECCEB7DDEAB790 /* Pods_CryptoChecker_RxFeedbackTests.framework */,
+				537D486F3E3D8510101996AE /* Pods_CryptoChecker_RxFeedbackUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A4DA50A2005BCD8004ADD9A = {
+			isa = PBXGroup;
+			children = (
+				9A4DA5152005BCD8004ADD9A /* CryptoChecker-RxFeedback */,
+				9A4DA52A2005BCD8004ADD9A /* CryptoChecker-RxFeedbackTests */,
+				9A4DA5352005BCD8004ADD9A /* CryptoChecker-RxFeedbackUITests */,
+				9A4DA5142005BCD8004ADD9A /* Products */,
+				BF06D3B29C319BB8872C079F /* Pods */,
+				99EBA576E585D986C8D5B972 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9A4DA5142005BCD8004ADD9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A4DA5132005BCD8004ADD9A /* CryptoChecker-RxFeedback.app */,
+				9A4DA5272005BCD8004ADD9A /* CryptoChecker-RxFeedbackTests.xctest */,
+				9A4DA5322005BCD8004ADD9A /* CryptoChecker-RxFeedbackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A4DA5152005BCD8004ADD9A /* CryptoChecker-RxFeedback */ = {
+			isa = PBXGroup;
+			children = (
+				9ACCFEA82006760900469321 /* Extension */,
+				9A4DA54B2005BE57004ADD9A /* Model */,
+				9A4DA5162005BCD8004ADD9A /* AppDelegate.swift */,
+				9A4DA5182005BCD8004ADD9A /* ViewController.swift */,
+				9A4DA51A2005BCD8004ADD9A /* Main.storyboard */,
+				9A4DA51D2005BCD8004ADD9A /* Assets.xcassets */,
+				9A4DA51F2005BCD8004ADD9A /* LaunchScreen.storyboard */,
+				9A4DA5222005BCD8004ADD9A /* Info.plist */,
+			);
+			path = "CryptoChecker-RxFeedback";
+			sourceTree = "<group>";
+		};
+		9A4DA52A2005BCD8004ADD9A /* CryptoChecker-RxFeedbackTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A4DA52B2005BCD8004ADD9A /* CryptoChecker_RxFeedbackTests.swift */,
+				9A4DA52D2005BCD8004ADD9A /* Info.plist */,
+			);
+			path = "CryptoChecker-RxFeedbackTests";
+			sourceTree = "<group>";
+		};
+		9A4DA5352005BCD8004ADD9A /* CryptoChecker-RxFeedbackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A4DA5362005BCD8004ADD9A /* CryptoChecker_RxFeedbackUITests.swift */,
+				9A4DA5382005BCD8004ADD9A /* Info.plist */,
+			);
+			path = "CryptoChecker-RxFeedbackUITests";
+			sourceTree = "<group>";
+		};
+		9A4DA54B2005BE57004ADD9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A4DA5472005BE40004ADD9A /* CoinMarketCapAPIClient.swift */,
+				9A4DA5482005BE41004ADD9A /* CoinMarketCapAPI.swift */,
+				9A4DA54C2005BE63004ADD9A /* Coin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9ACCFEA82006760900469321 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9ACCFEAB20067B5D00469321 /* UIScrollView+Reactive.swift */,
+				9ACCFEAD2007B5A000469321 /* ControlEvent+Signal.swift */,
+				9ACCFEA92006762700469321 /* Double+Decimal.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BF06D3B29C319BB8872C079F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D4779FD457233A6F4329188 /* Pods-CryptoChecker-RxFeedback.debug.xcconfig */,
+				348A1C01151C2C749237C06E /* Pods-CryptoChecker-RxFeedback.release.xcconfig */,
+				3C16D2A3D153D6610A529349 /* Pods-CryptoChecker-RxFeedbackTests.debug.xcconfig */,
+				D01D90E2EBEEC6D404FBB63F /* Pods-CryptoChecker-RxFeedbackTests.release.xcconfig */,
+				A44942B62F524AD962AE7467 /* Pods-CryptoChecker-RxFeedbackUITests.debug.xcconfig */,
+				0129D841E9DBE031A2135001 /* Pods-CryptoChecker-RxFeedbackUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A4DA5122005BCD8004ADD9A /* CryptoChecker-RxFeedback */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A4DA53B2005BCD8004ADD9A /* Build configuration list for PBXNativeTarget "CryptoChecker-RxFeedback" */;
+			buildPhases = (
+				AFD5933A25B0CD9657D3B68B /* [CP] Check Pods Manifest.lock */,
+				9A4DA50F2005BCD8004ADD9A /* Sources */,
+				9A4DA5102005BCD8004ADD9A /* Frameworks */,
+				9A4DA5112005BCD8004ADD9A /* Resources */,
+				D2DD2F37E5A8A80F0F7D65F1 /* [CP] Embed Pods Frameworks */,
+				13FD60229D138CB4730F5892 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CryptoChecker-RxFeedback";
+			productName = "CryptoChecker-RxFeedback";
+			productReference = 9A4DA5132005BCD8004ADD9A /* CryptoChecker-RxFeedback.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A4DA5262005BCD8004ADD9A /* CryptoChecker-RxFeedbackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A4DA53E2005BCD8004ADD9A /* Build configuration list for PBXNativeTarget "CryptoChecker-RxFeedbackTests" */;
+			buildPhases = (
+				2E06F0F12D7AC2A8303FB244 /* [CP] Check Pods Manifest.lock */,
+				9A4DA5232005BCD8004ADD9A /* Sources */,
+				9A4DA5242005BCD8004ADD9A /* Frameworks */,
+				9A4DA5252005BCD8004ADD9A /* Resources */,
+				5E9AE41780C79A7FB59254D2 /* [CP] Embed Pods Frameworks */,
+				93583491E189BDA42B8F2B6F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A4DA5292005BCD8004ADD9A /* PBXTargetDependency */,
+			);
+			name = "CryptoChecker-RxFeedbackTests";
+			productName = "CryptoChecker-RxFeedbackTests";
+			productReference = 9A4DA5272005BCD8004ADD9A /* CryptoChecker-RxFeedbackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A4DA5312005BCD8004ADD9A /* CryptoChecker-RxFeedbackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A4DA5412005BCD8004ADD9A /* Build configuration list for PBXNativeTarget "CryptoChecker-RxFeedbackUITests" */;
+			buildPhases = (
+				7991C8E115D23334035E7AD8 /* [CP] Check Pods Manifest.lock */,
+				9A4DA52E2005BCD8004ADD9A /* Sources */,
+				9A4DA52F2005BCD8004ADD9A /* Frameworks */,
+				9A4DA5302005BCD8004ADD9A /* Resources */,
+				A59902DD4229D4C38EA2C513 /* [CP] Embed Pods Frameworks */,
+				768E25746DB3B95CBB514ABA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A4DA5342005BCD8004ADD9A /* PBXTargetDependency */,
+			);
+			name = "CryptoChecker-RxFeedbackUITests";
+			productName = "CryptoChecker-RxFeedbackUITests";
+			productReference = 9A4DA5322005BCD8004ADD9A /* CryptoChecker-RxFeedbackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A4DA50B2005BCD8004ADD9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = yahoojapan;
+				TargetAttributes = {
+					9A4DA5122005BCD8004ADD9A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9A4DA5262005BCD8004ADD9A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9A4DA5122005BCD8004ADD9A;
+					};
+					9A4DA5312005BCD8004ADD9A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9A4DA5122005BCD8004ADD9A;
+					};
+				};
+			};
+			buildConfigurationList = 9A4DA50E2005BCD8004ADD9A /* Build configuration list for PBXProject "CryptoChecker-RxFeedback" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A4DA50A2005BCD8004ADD9A;
+			productRefGroup = 9A4DA5142005BCD8004ADD9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A4DA5122005BCD8004ADD9A /* CryptoChecker-RxFeedback */,
+				9A4DA5262005BCD8004ADD9A /* CryptoChecker-RxFeedbackTests */,
+				9A4DA5312005BCD8004ADD9A /* CryptoChecker-RxFeedbackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A4DA5112005BCD8004ADD9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4DA5212005BCD8004ADD9A /* LaunchScreen.storyboard in Resources */,
+				9A4DA51E2005BCD8004ADD9A /* Assets.xcassets in Resources */,
+				9A4DA51C2005BCD8004ADD9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4DA5252005BCD8004ADD9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4DA5302005BCD8004ADD9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13FD60229D138CB4730F5892 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoChecker-RxFeedback/Pods-CryptoChecker-RxFeedback-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E06F0F12D7AC2A8303FB244 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoChecker-RxFeedbackTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E9AE41780C79A7FB59254D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoChecker-RxFeedbackTests/Pods-CryptoChecker-RxFeedbackTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		768E25746DB3B95CBB514ABA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoChecker-RxFeedbackUITests/Pods-CryptoChecker-RxFeedbackUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7991C8E115D23334035E7AD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoChecker-RxFeedbackUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93583491E189BDA42B8F2B6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoChecker-RxFeedbackTests/Pods-CryptoChecker-RxFeedbackTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A59902DD4229D4C38EA2C513 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoChecker-RxFeedbackUITests/Pods-CryptoChecker-RxFeedbackUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFD5933A25B0CD9657D3B68B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoChecker-RxFeedback-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2DD2F37E5A8A80F0F7D65F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CryptoChecker-RxFeedback/Pods-CryptoChecker-RxFeedback-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxFeedback/RxFeedback.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxFeedback.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoChecker-RxFeedback/Pods-CryptoChecker-RxFeedback-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A4DA50F2005BCD8004ADD9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACCFEAE2007B5A000469321 /* ControlEvent+Signal.swift in Sources */,
+				9A4DA54A2005BE41004ADD9A /* CoinMarketCapAPI.swift in Sources */,
+				9A4DA5192005BCD8004ADD9A /* ViewController.swift in Sources */,
+				9ACCFEAC20067B5E00469321 /* UIScrollView+Reactive.swift in Sources */,
+				9ACCFEAA2006762700469321 /* Double+Decimal.swift in Sources */,
+				9A4DA54D2005BE63004ADD9A /* Coin.swift in Sources */,
+				9A4DA5492005BE41004ADD9A /* CoinMarketCapAPIClient.swift in Sources */,
+				9A4DA5172005BCD8004ADD9A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4DA5232005BCD8004ADD9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4DA52C2005BCD8004ADD9A /* CryptoChecker_RxFeedbackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4DA52E2005BCD8004ADD9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4DA5372005BCD8004ADD9A /* CryptoChecker_RxFeedbackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A4DA5292005BCD8004ADD9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A4DA5122005BCD8004ADD9A /* CryptoChecker-RxFeedback */;
+			targetProxy = 9A4DA5282005BCD8004ADD9A /* PBXContainerItemProxy */;
+		};
+		9A4DA5342005BCD8004ADD9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A4DA5122005BCD8004ADD9A /* CryptoChecker-RxFeedback */;
+			targetProxy = 9A4DA5332005BCD8004ADD9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A4DA51A2005BCD8004ADD9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A4DA51B2005BCD8004ADD9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A4DA51F2005BCD8004ADD9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A4DA5202005BCD8004ADD9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A4DA5392005BCD8004ADD9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A4DA53A2005BCD8004ADD9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A4DA53C2005BCD8004ADD9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D4779FD457233A6F4329188 /* Pods-CryptoChecker-RxFeedback.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TP2WEZBQA;
+				INFOPLIST_FILE = "CryptoChecker-RxFeedback/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.yahoo.CryptoChecker-RxFeedback";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A4DA53D2005BCD8004ADD9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 348A1C01151C2C749237C06E /* Pods-CryptoChecker-RxFeedback.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TP2WEZBQA;
+				INFOPLIST_FILE = "CryptoChecker-RxFeedback/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.yahoo.CryptoChecker-RxFeedback";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9A4DA53F2005BCD8004ADD9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C16D2A3D153D6610A529349 /* Pods-CryptoChecker-RxFeedbackTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CryptoChecker-RxFeedbackTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.yahoo.CryptoChecker-RxFeedbackTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoChecker-RxFeedback.app/CryptoChecker-RxFeedback";
+			};
+			name = Debug;
+		};
+		9A4DA5402005BCD8004ADD9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D01D90E2EBEEC6D404FBB63F /* Pods-CryptoChecker-RxFeedbackTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CryptoChecker-RxFeedbackTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.yahoo.CryptoChecker-RxFeedbackTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoChecker-RxFeedback.app/CryptoChecker-RxFeedback";
+			};
+			name = Release;
+		};
+		9A4DA5422005BCD8004ADD9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A44942B62F524AD962AE7467 /* Pods-CryptoChecker-RxFeedbackUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CryptoChecker-RxFeedbackUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.yahoo.CryptoChecker-RxFeedbackUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CryptoChecker-RxFeedback";
+			};
+			name = Debug;
+		};
+		9A4DA5432005BCD8004ADD9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0129D841E9DBE031A2135001 /* Pods-CryptoChecker-RxFeedbackUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CryptoChecker-RxFeedbackUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.yahoo.CryptoChecker-RxFeedbackUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CryptoChecker-RxFeedback";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A4DA50E2005BCD8004ADD9A /* Build configuration list for PBXProject "CryptoChecker-RxFeedback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A4DA5392005BCD8004ADD9A /* Debug */,
+				9A4DA53A2005BCD8004ADD9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A4DA53B2005BCD8004ADD9A /* Build configuration list for PBXNativeTarget "CryptoChecker-RxFeedback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A4DA53C2005BCD8004ADD9A /* Debug */,
+				9A4DA53D2005BCD8004ADD9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A4DA53E2005BCD8004ADD9A /* Build configuration list for PBXNativeTarget "CryptoChecker-RxFeedbackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A4DA53F2005BCD8004ADD9A /* Debug */,
+				9A4DA5402005BCD8004ADD9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A4DA5412005BCD8004ADD9A /* Build configuration list for PBXNativeTarget "CryptoChecker-RxFeedbackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A4DA5422005BCD8004ADD9A /* Debug */,
+				9A4DA5432005BCD8004ADD9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A4DA50B2005BCD8004ADD9A /* Project object */;
+}
